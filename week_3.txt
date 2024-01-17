@@ -1,0 +1,106 @@
+package technical_training;
+import java.util.Scanner;
+public class question_1 
+{
+	static int diff21(int n)
+	{
+		int x=(n<21)?(Math.abs(n-21)):(2*Math.abs(n-21));
+		return x;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int x=diff21(n);
+		System.out.println(x);
+	}
+
+}
+
+
+package technical_training;
+import java.util.Scanner;
+public class question_2 
+{
+	static boolean sleepin(boolean weekday, boolean vacation)
+	{
+		return !weekday||vacation;
+	}
+	public static void main(String[] args) 
+	{
+		boolean w=true, v=false;
+		boolean x=sleepin(w,v);
+		System.out.println(x);
+	}
+
+}
+
+
+package technical_training;
+import java.util.Scanner;
+public class question_3 
+{
+	static boolean hasteen(int x,int y,int z)
+	{
+		boolean
+		a=(((x>=13)&&(x<=19))||((y>=13)&&(y<=19))||((z>=13)&&(z<=19)))?(true):(false);
+		return a;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		int x,y,z;
+		x=s.nextInt();
+		y=s.nextInt();
+		z=s.nextInt();
+		boolean b=hasteen(x,y,z);
+		System.out.println(b);
+
+	}
+
+}
+
+
+package technical_training;
+import java.util.Scanner;
+public class question_4 
+{
+	static int close10(int x,int y)
+	{
+	int first_diff=Math.abs(x-10);
+	int second_diff=Math.abs(y-10);
+	int r=(first_diff>second_diff)?(first_diff):((first_diff>second_diff)?(second_diff):(0));
+	return r;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		int x,y;
+		x=s.nextInt();
+		y=s.nextInt();
+		int b=close10(x,y);
+		System.out.println(b);
+	}
+
+}
+
+
+package technical_training;
+import java.util.Scanner;
+public class question_5 {
+	static boolean or35(int x,int y)
+	{
+	boolean r=((x%3==0)||(y%5==0))?(true):(false);
+	return r;
+	}
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int x,y;
+		x=s.nextInt();
+		y=s.nextInt();
+		boolean b=or35(x,y);
+		System.out.println(b);
+
+	}
+
+}
