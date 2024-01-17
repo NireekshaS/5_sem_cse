@@ -1,0 +1,161 @@
+package program;
+
+public class Week1_Question1
+{
+ public static void main(String[] args) {
+	int a=10;
+	int b=20;
+	System.out.println("sum:"+(a+b));
+}
+
+}
+
+
+package program;
+import java.util.Scanner;
+
+public class Week1_Question2 
+{
+public static void main(String[] args) 
+{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter any two integer numbers ");
+	int a=sc.nextInt();
+	int b=sc.nextInt();
+	System.out.println("sum:"+(a+b));
+	sc.close();
+}
+}
+
+
+//Swapping of 2 numbers by using 3rd variable 
+package program;
+
+public class Week1_Question3
+{
+public static void main(String[] args) {
+	int a=10;
+	int b=20;
+	System.out.println("before swaping value of \na:"+a+" \nb:"+b);
+	int temp=a;
+	a=b;
+	b=temp;
+	System.out.println("After swaping value of \na:"+a+" \nb:"+b);
+}
+}
+
+
+//Swapping of 2 numbers without using 3rd variable 
+package program;
+
+public class Week1_Question4 
+{
+public static void main(String[] args) {
+	int a=10;
+	int b=20;
+	System.out.println("before swaping value of \na:"+a+" \nb:"+b);
+	a=a+b;//30
+	b=a-b;//30-20=10
+	a=a-b;//30-10=20
+	
+	
+	// or we can use xor operator
+//	a=a^b;
+//	b=a^b;
+//	a=a^b;
+	
+	
+	System.out.println("After swaping value of \na:"+a+" \nb:"+b);
+
+}
+}
+
+
+//find minimum number 
+package program;
+
+public class Week1_Question5
+{
+public static void main(String[] args) {
+	int a=10;
+	int b=20;
+	if(a>b)
+		System.out.println("a: is big "+ a);
+	else
+		System.out.println("b: is big "+ b);
+}
+}
+
+
+// maximum of 3 numbers 
+package program;
+import java.util.Scanner;
+public class Week1_Question6 {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter any 3 number ");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		if(a>b && a>c)
+			System.out.println("a is big "+a);
+		else if(b>c)
+			System.out.println("b is big "+b);
+		else
+			System.out.println("c is big "+c);
+		sc.close();
+	}
+}
+
+
+package program;
+import java.util.Scanner;
+
+public class Week1_Question7 
+{
+	public static void main(String[] args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+				System.out.println("enter your choice\n1.Addition\n2.subtraction\n3.multiplication\n4.division\n5.exit");
+		int ch=sc.nextInt();
+		
+		System.out.println("enter any two numbers for calculation");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		
+			switch(ch)
+			{
+			case 1: System.out.println("sum of numbers:"+(a+b));
+			break;
+			case 2:System.out.println("difference of given numbers:"+(a-b));
+			break;
+			case 3: System.out.println("multiplicatuion of given numbers: "+(a*b));
+			break ;
+			case 4:System.out.println("division of given number "+(a/b));
+			break;
+			case 5:System.out.println("exit from the loop press 5");
+			break;
+			default:
+			System.out.println("invalid choice");
+			
+			}
+		sc.close();
+	}
+}
+
+
+//type casting in java 
+package program;
+
+public class Week1_Question8 
+{
+	public static void main(String[] args)
+	{
+		int a=75;
+		char c=(char)a;
+		System.out.println(c);
+	}
+}
